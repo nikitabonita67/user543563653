@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink; /* Background color changed to pink */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Do you like me?</h2>
+        <button onclick="redirectToYesPage()">Yes</button>
+        <button onclick="redirectToNoPage()">No</button>
+        <button onclick="redirectToIDontKnowPage()">I don't know</button>
+    </div>
+
+    <script>
+        function redirectToYesPage() {
+            window.location.href = "yesfirst.html";
+        }
+
+        function redirectToNoPage() {
+            window.location.href = "nofirst.html";
+        }
+
+        function redirectToIDontKnowPage() {
+            window.location.href = "idkfirst.html";
+        }
+    </script>
+</body>
+</html>

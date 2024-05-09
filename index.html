@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink; /* Background color changed to pink */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hi Yunus!</h1> <!-- Changed "Hi!" to "Hi Yunus!" -->
+        <button onclick="gotohelp()">Hi, what's this?</button>
+        <button onclick="sayBye()">Bye</button>
+    </div>
+
+    <script>
+        function gotohelp() {
+            window.location.href = "whatsthis.html";
+        }
+
+        function sayBye() {
+            window.location.href = "bye.html"
+        }
+    </script>
+</body>
+</html>

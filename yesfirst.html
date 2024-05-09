@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink; /* Background color for the "Yes" page */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+        .heart {
+            color: rgb(192, 59, 59);
+            font-size: 208px;
+            margin: 10px;
+        }
+        .small-text {
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Hearts -->
+        <div class="heart">&#10084;</div>
+
+        <!-- Text "Great" -->
+        <h2>I like you too</h2>
+
+        <!-- Text "That's awesome" -->
+        <p class="small-text">Do you think you're showing me that you like me?</p>
+
+        <!-- Options -->
+        <button onclick="redirectToThinkSoPage()">I think so</button>
+        <button onclick="redirectToDontThinkSoPage()">I don't think so</button>
+    </div>
+
+    <script>
+        function redirectToThinkSoPage() {
+            window.location.href = "think_so_page.html";
+        }
+
+        function redirectToDontThinkSoPage() {
+            window.location.href = "dont_think_so_page.html";
+        }
+    </script>
+</body>
+</html>

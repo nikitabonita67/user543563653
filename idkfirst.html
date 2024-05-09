@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indecisive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: rgb(125, 146, 185); /* Background color for the "Indecisive" page */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+        .small-text {
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>You're indecisive, why?
+    </h1>
+
+
+
+    <p class="small-text">For the smallest matters too. Its who you are and its nothing bad. I just need reassurance and you never give me it.
+        I need to know i'm not wasting my time on you. Because i really like you. I just wish you showed me it, because I certainly do.
+    Would you want to change that for me? </p>
+    <button onclick="sure()">Sure, I'm listening</button>
+    <button onclick="nope()">Nope, i don't want to change for you</button>
+    <button onclick="badforme()">I don't want to like you, you're bad for me</button>
+
+    <script>
+        function sure() {
+            window.location.href = "sure.html";
+        }
+
+        function nope() {
+            window.location.href = "nofirst.html";
+        }
+        function badforme() {
+            window.location.href = "badforme.html";
+        }
+
+    </script>
+</body>
+</html>

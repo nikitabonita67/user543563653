@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink; /* Background color for the "Yes" page */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+      
+     
+        .small-text {
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <!-- Text "Great" -->
+        <h2>How come?</h2>
+
+        <!-- Text "That's awesome" -->
+        <p class="small-text">I'm doubting you do. You never text me, you never ask about my life, you don't care if I do something. 
+            UNLESS i have some sort of contact with a boy. When we regain contact, you take hours to respond. But when we havent been talking for a while,
+             you are quick to respond etc. I know why. It's because you dont actually like me, you like our memories, when we used to stay up late together.
+            You like the attention and validation i give you, that i will always come back to you. </p>
+
+        <!-- Options -->
+        <button onclick="youarewrong()">No, you are wrong. I always care about you. You don't udnerstand.</button>
+        <button onclick="mayberight()">Maybe you're right...</button>
+    </div>
+
+    <script>
+        function youarewrong() {
+            window.location.href = "youarewrong.html";
+        }
+
+        function mayberight() {
+            window.location.href = "mayberight.html";
+        }
+    </script>
+</body>
+</html>

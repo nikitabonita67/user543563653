@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink; /* Background color for the "Yes" page */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+        .heart {
+            color: rgb(14, 7, 7);
+            font-size: 108px;
+            margin: 10px;
+        }
+        .small-text {
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Hearts -->
+        <div class="heart">&#10084;</div>
+
+        <!-- Text "Great" -->
+        <h2>We.need.to.stop.texting.eachother.</h2>
+
+        <!-- Text "That's awesome" -->
+        <p class="small-text">If you've come all the way here, then its a sign we shouldn't keep talking. To come here has a probability of < 13% (less than approx 13%, if you cant do basic math). So yes, its a sign.</p>
+
+        <!-- Options -->
+        <button onclick="redirectToThink()">i'm sure i pressed in a hurry, let me restart</button>
+        <button onclick="redirectToDont()">yup. got it. bye bitch. will never talk to you again.</button>
+    </div>
+
+    <script>
+        function redirectToThink() {
+            window.location.href = "first.html";
+        }
+
+        function redirectToDont() {
+            window.location.href = "NOTHING.html";
+        }
+    </script>
+</body>
+</html>

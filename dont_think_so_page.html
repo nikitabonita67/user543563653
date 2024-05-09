@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: hsl(323, 53%, 51%); /* Background color for the "No" page */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+        .small-text {
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Text -->
+        <h2>Then you should udnerstand.</h2>
+        <p class="small-text">You know that I put a lot of time thinking about you, and that it's wasting my time. You should udnerstand that i block you repeadetly and have you ignored for months. Then you should udnerstand why i want so much. 
+            The reason for my blocking is this, i like you, you like me, you dont show it, you dont talk to me, you dont care. i care too much so it takes a lot of energy.  </p>
+
+        <!-- Options -->
+        <button onclick="redirectToItsYouPage()">I understand</button>
+        <button onclick="redirectToIDontKnowPage()">You're crazy</button>
+    </div>
+
+    <script>
+        function redirectToItsYouPage() {
+            window.location.href = "finalgood.html";
+        }
+
+        function redirectToIDontKnowPage() {
+            window.location.href = "finalbad.html";
+        }
+    </script>
+</body>
+</html>
